@@ -3,14 +3,14 @@ public class Test1 {
 
     public static void main (String[] args)
         {
-            Double myNumber = convert(text);
-            System.out.println (myNumber);
+            ;
+            System.out.println (convert());
         }
 
         static Double convert(String s){
-        double var = Double.parseDouble (s);
-        System.out.println ();
-        return var;
+        double value = Double.parseDouble (s);
+        double var = Double.valueOf(String.format("%.2f",value));
+        return convert();
         }
 
 
